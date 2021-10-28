@@ -9,4 +9,4 @@ python3-pip python3-apt
 COPY hello.py /usr/local/bin/hello.py
 RUN chmod +x /usr/local/bin/hello.py
 
-ENTRYPOINT ["hello.py"]
+CMD [ "python", "/usr/local/bin/hello.py"]

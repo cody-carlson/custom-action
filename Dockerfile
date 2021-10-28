@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-RUN apt install -y python3      
+RUN apt install -y python3-pip     
 
 COPY hello.py /usr/local/bin/hello.py
 RUN chmod +x /usr/local/bin/hello.py
